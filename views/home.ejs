@@ -1,0 +1,39 @@
+<%- include("./include/header") -%>
+    <center>
+        <h2> Product List </h2>
+        <table class="table table-responsive-lg table-bordered table-hover">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Title</th>
+                <th scope="col">Status</th>
+                <th scope="col">Update/Delete</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+                <% for(var i=0; i < Object.keys(data.products).length; i++) { %>
+              <tr>
+                <td>
+                    <%= i + 1 %>
+                </td>
+                  <td>
+                      <%= data.products[i].title  %>
+                  </td>
+                  <td>
+                    <%= data.products[i].status  %>
+                </td>         
+                <td>
+                    <a href="/change/<%= data.products[i].id %>">
+                        <button class="btn btn-dark">
+                            <i class="fa-solid fa-wrench"></i>
+                        </button>
+                    </a>
+                </td>
+              </tr>
+              <%}%>
+            </tbody>
+          </table>
+    </center>
+    </body>
+
+    </html>
