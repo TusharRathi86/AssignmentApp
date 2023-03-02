@@ -37,6 +37,14 @@ exports.changeProduct = (req, res) => {
   }
 };
 
-// exports.updateProduct = (req, res) => {
-//   return res.redirect("/");
-// };
+exports.updateProduct = (req, res) => {
+  try {
+    request(options, (http_request, http_response) => {
+      let data = JSON.parse(http_response.body);
+      res.render("updatePage", { data: data });
+    });
+  } catch (ex) {
+    console.log(ex);
+    throw new Error(ex);
+  }
+};

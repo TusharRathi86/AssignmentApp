@@ -20,7 +20,8 @@ Please note that you have to make a Standalone App and not an Embedded App for t
 
 You can submit the task by replying to the message with the following info-
 1. Login ID and password to your Shopify Partners account in which you have installed your app on a development store.
->> ID: https://rathi-gift-store.myshopify.com/
+>> ID: tushar.rathi860@gmail.com
 >> Password: TR@5183#
+>> Store: rathi gift store
 2. Link to the code on Github
 >> https://github.com/TusharRathi86/AssignmentApp.git
