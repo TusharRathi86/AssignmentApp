@@ -23,5 +23,6 @@ You can submit the task by replying to the message with the following info-
 >> ID: tushar.rathi860@gmail.com
 >> Password: TR@5183#
 >> Store: rathi gift store
+>> App: assigApp
 2. Link to the code on Github
 >> https://github.com/TusharRathi86/AssignmentApp.git
